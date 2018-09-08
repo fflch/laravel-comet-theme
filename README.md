@@ -17,6 +17,10 @@ Sections availables:
  - stylesheets (it is a good idea to use: *{{ parent() }}*)
  - javascripts (it is a good idea to use: *{{ parent() }}*)
 
+Publish assets:
+    
+    php artisan vendor:publish --provider="Uspdev\CometTheme\CometThemeServiceProvider" --tag=assets
+
 An example that can be inserted in your base.html.twig:
 
     @extends('XXXXX')
