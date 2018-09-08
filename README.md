@@ -4,9 +4,9 @@ To install the package:
 
     composer require uspdev/laravel-comet-theme
 
-Extends in your template:
+Extends **laravel-comet-theme master** on your template:
 
-    @extends('XXXXX')
+    @extends('laravel-comet-theme::master')
 
 Sections availables:
 
@@ -23,7 +23,7 @@ Publish assets:
 
 An example that can be inserted in your base.html.twig:
 
-    @extends('XXXXX')
+    @extends('laravel-comet-theme::master')
 
     @section('title') Sistema @endsection
 
