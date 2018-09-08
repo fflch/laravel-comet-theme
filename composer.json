@@ -11,6 +11,13 @@
             "email": "thiago.verissimo@usp.br"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uspdev\\CometTheme\\CometThemeServiceProvider"
+            ]
+        }
+    },
     "autoload": {
         "psr-4" : {
             "Uspdev\\CometTheme\\" : "src"
