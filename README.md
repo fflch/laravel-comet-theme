@@ -19,7 +19,7 @@ Sections availables:
 
 Publish assets:
     
-    php artisan vendor:publish --provider="Uspdev\CometTheme\CometThemeServiceProvider" --tag=assets
+    php artisan vendor:publish --provider="Uspdev\CometTheme\CometThemeServiceProvider" --tag=assets --force
 
 An example that can be inserted in your base.html.twig:
 
