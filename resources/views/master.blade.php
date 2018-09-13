@@ -15,20 +15,27 @@
             <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
             <link href="{{ asset('/vendor/laravel-comet-theme/css/style.css') }}" rel="stylesheet">
-         
+
         @show
     </head>
 
     <body>
-        @include('laravel-comet-theme::partials.nav')
+        {{--@include('laravel-comet-theme::partials.nav')--}}
 
         <div class="container-fluid">
-            <div class="row">
-                @include('laravel-comet-theme::partials.menu')
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                    @yield('content')
-                </main>
+          <div class="row">
+            <div class="col text-center">
+              <img src="/img/logo.png" alt="logo" class="align-middle">
             </div>
+          </div>
+          <div class="row">
+            @include('laravel-comet-theme::partials.menu')
+          </div>
+          <div class="row">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 container">
+                @yield('content')
+            </main>
+          </div>
         </div>
 
         @section('javascripts')
@@ -42,4 +49,3 @@
         @show
     </body>
 </html>
-
