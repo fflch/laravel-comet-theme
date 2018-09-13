@@ -11,6 +11,10 @@ a.nav-link {
   color: #593500;
 }
 
+nav.navbar {
+  width: 100%;
+}
+
 /* SHIFT */
 nav.navbar ul li a {
   position:relative;
