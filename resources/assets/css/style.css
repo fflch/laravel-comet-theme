@@ -4,7 +4,7 @@ body {
 }
 
 /* MAIN */
-main.container {
+main.container-fluid {
   background-color: #F7F7F2;
 }
 
@@ -90,4 +90,12 @@ nav.navbar ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
+}
+
+.bg-gray{
+  background-color: #ECECEC;
+}
+
+.bg-orange{
+  background-color: #FFC76F;
 }

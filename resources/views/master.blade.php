@@ -28,13 +28,31 @@
               <img src="/img/logo.png" alt="logo" class="align-middle">
             </div>
           </div>
+          @section('language')
+            <div class="row">
+              <div class="col text-right">
+                @if (App::isLocale('en'))
+                  <a href="/locale/pt_br">Português</a>
+                @else
+                  <a href="/locale/en">English</a>
+                @endif
+              </div>
+            </div>
+          @show
           <div class="row">
             @include('laravel-comet-theme::partials.menu')
           </div>
           <div class="row">
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 container">
+            <main role="main" class="p-5 container-fluid">
                 @yield('content')
             </main>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <footer class="page-footer font-small blue">
+              @include('partials.footer')
+            </footer>
           </div>
         </div>
 
