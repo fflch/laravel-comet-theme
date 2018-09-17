@@ -25,20 +25,15 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col text-center">
-              <img src="/img/logo.png" alt="logo" class="align-middle">
+                @yield('header')
+
             </div>
           </div>
-          @section('language')
             <div class="row">
               <div class="col text-right">
-                @if (App::isLocale('en'))
-                  <a href="/locale/pt_br">Português</a>
-                @else
-                  <a href="/locale/en">English</a>
-                @endif
+                @yield('language')
               </div>
             </div>
-          @show
           <div class="row">
             @include('laravel-comet-theme::partials.menu')
           </div>
@@ -51,7 +46,7 @@
         <div class="row">
           <div class="col">
             <footer class="page-footer font-small blue">
-              @include('partials.footer')
+              @include('laravel-comet-theme::partials.footer')
             </footer>
           </div>
         </div>
