@@ -99,3 +99,7 @@ nav.navbar ul li a:hover:after {
 .bg-orange{
   background-color: #FFC76F;
 }
+
+form{
+  display: inline;
+}
