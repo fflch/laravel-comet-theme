@@ -11,10 +11,7 @@
 
         <!-- Bootstrap core CSS -->
         @section('styles')
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
-            <link href="{{ asset('/vendor/laravel-comet-theme/css/style.css') }}" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('/css/app.css')}}">
 
         @show
     </head>
@@ -29,11 +26,11 @@
 
             </div>
           </div>
-            <div class="row">
-              <div class="col text-right">
-                @yield('language')
-              </div>
+          <div class="row">
+            <div class="col text-right">
+              @yield('language')
             </div>
+          </div>
           <div class="row">
             @include('laravel-comet-theme::partials.menu')
           </div>
@@ -42,12 +39,12 @@
                 @yield('content')
             </main>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <footer class="page-footer font-small blue">
-              @include('laravel-comet-theme::partials.footer')
-            </footer>
+          <div class="row">
+            <div class="col">
+              <footer class="page-footer font-small blue">
+                @include('laravel-comet-theme::partials.footer')
+              </footer>
+            </div>
           </div>
         </div>
 
