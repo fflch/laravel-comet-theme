@@ -28,7 +28,7 @@ Publish assets configuring in your webpack.mix.js:
 	   'vendor/uspdev/laravel-comet-theme/resources/assets/css/style.css',
 	], 'public/css/app.css');
 
-In order to publish you need to run Mix:
+And then run Mix:
 
     npm run dev
 
