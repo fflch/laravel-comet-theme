@@ -17,9 +17,15 @@ Sections availables:
  - stylesheets (it is a good idea to use: *{{ parent() }}*)
  - javascripts (it is a good idea to use: *{{ parent() }}*)
 
-Publish assets:
-    
-    php artisan vendor:publish --provider="Uspdev\CometTheme\CometThemeServiceProvider" --tag=assets --force
+Publish assets, configure in your webpack.mix.js project:
+
+  mix.js('vendor/uspdev/laravel-comet-theme/resources/assets/js/script.js', 'public/js')
+     .sass('vendor/uspdev/laravel-comet-theme/resources/assets/sass/app.scss', 'public/css');
+
+   mix.styles([
+       'public/css/app.css',
+       'vendor/uspdev/laravel-comet-theme/resources/assets/css/style.css',
+   ], 'public/css/app.css');
 
 An example that can be inserted in your base.html.twig:
 
