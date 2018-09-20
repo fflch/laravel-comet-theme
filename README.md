@@ -1,3 +1,4 @@
+
 # Laravel theme for comet project
 
 To install the package:
@@ -17,7 +18,7 @@ Sections availables:
  - stylesheets (it is a good idea to use: *{{ parent() }}*)
  - javascripts (it is a good idea to use: *{{ parent() }}*)
 
-Publish assets, configure in your webpack.mix.js project:
+Publish assets configuring in your webpack.mix.js project:
 
     mix.js('vendor/uspdev/laravel-comet-theme/resources/assets/js/script.js', 'public/js')
        .sass('vendor/uspdev/laravel-comet-theme/resources/assets/sass/app.scss', 'public/css');
@@ -26,6 +27,10 @@ Publish assets, configure in your webpack.mix.js project:
 	   'public/css/app.css',
 	   'vendor/uspdev/laravel-comet-theme/resources/assets/css/style.css',
 	], 'public/css/app.css');
+
+In order to publish you need to run Mix:
+
+    npm run dev
 
 An example that can be inserted in your base.html.twig:
 
