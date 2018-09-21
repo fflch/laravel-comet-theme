@@ -107,3 +107,12 @@ nav.navbar ul li a:hover:after {
 form{
   display: inline;
 }
+
+.page-link {
+  color: #996600;
+}
+
+.page-item.active .page-link {
+  background-color: #FFC76F;
+  border-color: #FFC76F;
+}
