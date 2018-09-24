@@ -116,3 +116,16 @@ form{
   background-color: #FFC76F;
   border-color: #FFC76F;
 }
+
+.btn-success {
+  color: #593500;
+}
+
+.btn-success:hover {
+  background-color: #ffae3d;
+  color: #804d00;
+}
+
+.page-link:hover {
+  color: #FFC76F;
+}
