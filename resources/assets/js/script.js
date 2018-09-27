@@ -1,6 +1,7 @@
-(function() {
+//Declare library
+LibComet = function () {
 
-  var teste = 'teste';
+  //Library functions
 
   /**
    * Show and Hide Elements from their parent
@@ -12,8 +13,7 @@
    *    }
    * }
   */
-
-  var showHideFields = function (showElms){
+  showHideFields = function (showElms){
     parentElm = document.querySelector(showElms[0]).parentElement;
     hideFields = Array.from(parentElm.children);
 
@@ -26,4 +26,9 @@
     } );
   }
 
-})();
+
+  return {
+    "showHideFields" :  showHideFields
+  }
+
+}();
