@@ -53,6 +53,12 @@ a:hover {
 	text-decoration:none;
 }
 
+.list-group-item-action {
+  color:#996600;
+}
+.list-group-item-action:hover {
+  color:#FF9B04;
+}
 
 /* NAV BAR */
 a.nav-link {
