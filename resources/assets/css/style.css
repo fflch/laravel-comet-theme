@@ -135,3 +135,21 @@ form{
 .page-link:hover {
   color: #FFC76F;
 }
+
+.lista-palavras th {
+    cursor: pointer;
+    background-color: #FFC76F;
+    color: white;
+}
+
+.lista-palavras td, .lista-palavras th {
+    border: 1px solid #ddd;
+}
+
+.lista-palavras tr:nth-child(even){
+  background-color: #efefed;
+}
+
+.lista-palavras tr:hover {
+  background-color: #ddd;
+}
