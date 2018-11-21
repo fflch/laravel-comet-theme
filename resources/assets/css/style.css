@@ -31,15 +31,6 @@ h2 {
   height: 25px;
 }
 
-/* UL */
-ul.corpora {
-  list-style: none;
-}
-
-li.corpora{
-  margin-top:20px;
-}
-
 /* Content */
 a {
 	color:#996600;
