@@ -31,15 +31,6 @@ h2 {
   height: 25px;
 }
 
-/* UL */
-ul.corpora {
-  list-style: none;
-}
-
-li.corpora{
-  margin-top:20px;
-}
-
 /* Content */
 a {
 	color:#996600;
@@ -134,4 +125,21 @@ form{
 
 .page-link:hover {
   color: #FFC76F;
+}
+
+.lista-palavras th {
+    background-color: #FFC76F;
+    color: white;
+}
+
+.lista-palavras td, .lista-palavras th {
+    border: 1px solid #ddd;
+}
+
+.lista-palavras tr:nth-child(even){
+  background-color: #efefed;
+}
+
+.lista-palavras tr:hover {
+  background-color: #ddd;
 }
