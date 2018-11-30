@@ -136,7 +136,7 @@ form{
     border: 1px solid #ddd;
 }
 
-.lista-palavras tr:nth-child(even){
+.ocrr:nth-child(4n+1){
   background-color: #efefed;
 }
 
