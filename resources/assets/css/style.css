@@ -136,6 +136,10 @@ form{
     border: 1px solid #ddd;
 }
 
+.tbl-striped tr:nth-child(even){
+  background-color: #efefed;
+}
+
 .ocrr:nth-child(4n+1){
   background-color: #efefed;
 }
