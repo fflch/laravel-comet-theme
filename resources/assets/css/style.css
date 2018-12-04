@@ -130,9 +130,6 @@ form{
 .lista-palavras th {
     background-color: #FFC76F;
     color: white;
-}
-
-.lista-palavras td, .lista-palavras th {
     border: 1px solid #ddd;
 }
 
