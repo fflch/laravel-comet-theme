@@ -26,10 +26,8 @@
 
             </div>
           </div>
-          <div class="row">
-            <div class="col text-right">
-              @yield('language')
-            </div>
+          <div class="row justify-content-end mb-1">
+             @yield('right-top-menu')
           </div>
           <div class="row">
             @include('laravel-comet-theme::partials.menu')
