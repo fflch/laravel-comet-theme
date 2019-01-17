@@ -140,3 +140,9 @@ form{
 .lista-palavras tr:hover {
   background-color: #ddd;
 }
+
+.dropdown-item-danger.active,
+.dropdown-item-danger:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #e3342f
