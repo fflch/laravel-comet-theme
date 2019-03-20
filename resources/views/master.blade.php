@@ -9,10 +9,13 @@
 
         <title>@yield('title')</title>
 
-        <!-- Bootstrap core CSS -->
+        <!-- Javascript -->
+        @section('javascripts_head')
+        @show
+
+        <!-- CSS -->
         @section('styles')
             <link rel="stylesheet" href="{{ asset('/css/app.css')}}">
-
         @show
     </head>
 
