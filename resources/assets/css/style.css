@@ -133,3 +133,7 @@ form{
   text-decoration: none;
   background-color: #e3342f
 }
+
+.ck-editor__editable {
+    min-height: 350px !important;
+}
