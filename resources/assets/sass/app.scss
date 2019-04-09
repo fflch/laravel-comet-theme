@@ -1,19 +1,12 @@
-
-// Fonts
+// Font Awesome
+@import "../scss/fontawesome/fontawesome.scss";
+@import "../scss/fontawesome/solid.scss";
 
 // Variables
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import '../scss/bootstrap/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-// Theme css
+// Theme CSS
 @import '../css/style';
-
-@import "../scss/fontawesome.scss";
-@import "../scss/solid.scss";
