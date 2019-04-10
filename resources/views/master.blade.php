@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        @section('meta')
+        @show
         <link rel="icon" href="/favicon.ico">
 
         <title>@yield('title')</title>
@@ -21,33 +23,35 @@
 
     <body>
         {{--@include('laravel-comet-theme::partials.nav')--}}
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center">
-                @yield('header')
-
+        @section('body_top')
+        @show
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col text-center">
+                    @yield('header')
+                </div>
+              </div>
+              <div class="row justify-content-end mb-1">
+                 @yield('right-top-menu')
+              </div>
+              <div class="row">
+                @include('laravel-comet-theme::partials.menu')
+              </div>
+              <div class="row">
+                <main role="main" class="p-5 container-fluid">
+                    @yield('content')
+                </main>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <footer class="page-footer font-small blue">
+                    @include('laravel-comet-theme::partials.footer')
+                  </footer>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-end mb-1">
-             @yield('right-top-menu')
-          </div>
-          <div class="row">
-            @include('laravel-comet-theme::partials.menu')
-          </div>
-          <div class="row">
-            <main role="main" class="p-5 container-fluid">
-                @yield('content')
-            </main>
-          </div>
-          <div class="row">
-            <div class="col">
-              <footer class="page-footer font-small blue">
-                @include('laravel-comet-theme::partials.footer')
-              </footer>
-            </div>
-          </div>
-        </div>
+        @section('body_bottom')
+        @show
 
         @section('javascripts')
             <script type="text/javascript" src="{{ asset('/js/script.js') }}"></script>
