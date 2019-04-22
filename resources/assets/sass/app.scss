@@ -10,3 +10,20 @@
 // fontawesome
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+// Custom styles
+@each $name, $value in $grid-breakpoints {
+    @media all and (min-width: $value) {
+        .row.vdivide-#{$name} > [class*='col-']:not(:last-child):after {
+            background: #e0e0e0;
+            width: 1px;
+            content: "";
+            display:block;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            min-height: 70px;
+        }
+    }
+}
