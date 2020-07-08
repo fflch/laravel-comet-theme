@@ -18,11 +18,15 @@ Sections availables:
  - stylesheets (it is a good idea to use: *{{ parent() }}*)
  - javascripts (it is a good idea to use: *{{ parent() }}*)
 
-Publish assets configuring in your webpack.mix.js:
+Publish assets using webpack.mix.js:
 
     mix.js('vendor/uspdev/laravel-comet-theme/resources/assets/js/script.js', 'public/js')
        .sass('vendor/uspdev/laravel-comet-theme/resources/assets/sass/app.scss', 'public/css');
 
+Using service provider:
+
+    php artisan vendor:publish --provider="Uspdev\CometTheme\CometThemeServiceProvider" --tag=assets --force
+    
 And then run Mix:
 
     npm run dev
