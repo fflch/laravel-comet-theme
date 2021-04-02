@@ -1,6 +1,6 @@
 <?php
 
-namespace Uspdev\CometTheme;
+namespace fflch\CometTheme;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\View\Factory;
