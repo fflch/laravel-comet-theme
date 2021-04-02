@@ -3,7 +3,7 @@
 
 To install the package:
 
-    composer require uspdev/laravel-comet-theme
+    composer require fflch/laravel-comet-theme
 
 Extends **laravel-comet-theme master** on your template:
 
