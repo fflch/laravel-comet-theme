@@ -13,13 +13,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "fflch\\CometTheme\\CometThemeServiceProvider"
+                "Fflch\\CometTheme\\CometThemeServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4" : {
-            "fflch\\CometTheme\\" : "src"
+            "Fflch\\CometTheme\\" : "src"
         }
     }
 }
