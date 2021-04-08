@@ -1,0 +1,79 @@
+ @media all and (min-width: 0) {
+	 .row.vdivide-xs > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ @media all and (min-width: 576px) {
+	 .row.vdivide-sm > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ @media all and (min-width: 768px) {
+	 .row.vdivide-md > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ @media all and (min-width: 992px) {
+	 .row.vdivide-lg > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ @media all and (min-width: 1200px) {
+	 .row.vdivide-xl > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ @media all and (min-width: 1400px) {
+	 .row.vdivide-xxl > [class*='col-']:not(:last-child):after {
+		 background: #e0e0e0;
+		 width: 1px;
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 right: 0;
+		 min-height: 70px;
+	}
+}
+ 
