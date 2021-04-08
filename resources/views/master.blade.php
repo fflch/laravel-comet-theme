@@ -51,6 +51,7 @@
           </div>
           <div class="row">
             <main role="main" class="p-5 container-fluid">
+                @include('laravel-comet-theme::partials.flash')
                 @yield('content')
             </main>
           </div>
